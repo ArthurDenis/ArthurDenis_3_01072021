@@ -27,6 +27,12 @@ p
     font-weight: 500;
 }
 
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
 .sous_titre
 {
     font-weight: 300;
@@ -88,7 +94,7 @@ main
     padding-bottom: 2em;
 }
 
-#exploration
+.btn
 {
     margin-right: 20%;
     margin-left:20%;
@@ -222,9 +228,4 @@ footer p, footer i
 footer p
 {
     margin: 0.2em 0em;
-}
-
-a
-{
-    text-decoration: none;
 }
