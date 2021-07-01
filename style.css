@@ -1,0 +1,230 @@
+body
+{
+    margin:0px;
+}
+
+#contenant
+{
+    font-family: 'Roboto', 'Sans-Serif', 'Shrikhand';
+    width: 100%;
+}
+
+h1, h3
+{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+h4
+{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0em;
+}
+
+p
+{
+    font-weight: 500;
+}
+
+.sous_titre
+{
+    font-weight: 300;
+    margin: 0.5em 0em 0em 0em;
+}
+
+header
+{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0.5em;    
+}
+
+#logo
+{
+    width: 50%;
+    padding-top: 1em;
+}
+
+main
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.recherche
+{ 
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    height: 3em;
+    background-color: rgb(238, 238, 238);
+    box-shadow: inset 0em 0.3em 0.3em rgb(220, 220, 220);
+}
+
+.recherche input
+{
+    padding-left: 1em;
+    border: 0em;
+    font-size: 1em;
+    font-weight: 500;
+    max-width: 40%;
+    background-color: rgb(238, 238, 238);
+}
+
+#en_tete
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(246, 246, 246);
+    padding-bottom: 2em;
+}
+
+#exploration
+{
+    margin-right: 20%;
+    margin-left:20%;
+    margin-top: 1em;
+    height: 3em;
+    border-radius: 1.5em;
+    background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    color: white;
+}
+
+#processus
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titre_partie
+{
+    align-self: flex-start;
+    padding-left: 0.5em;
+}
+
+.etape
+{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    box-shadow: 0px 9px 30px 5px rgb(206, 204, 204);
+    border-radius: 1em;
+}
+
+.etape i
+{
+    padding-right: 1em;
+}
+
+.numero_etape
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #9356DC;
+    width: 1.6em;
+    height: 1.6em;
+    color: white;
+    position: relative;
+    right: 1em;
+    font-size: 0.8em;
+}
+
+#restaurant
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fiche_restaurant
+{
+    max-width: 90%;
+    height: 16em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+    box-shadow: 0px 9px 30px 5px rgb(206, 204, 204);
+}
+
+.photo_restaurant
+{
+    object-fit: cover;
+    width: 100%;
+    height: 70%;
+    border-radius: 1em 1em 0em 0em;
+}
+
+.info_restaurant
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.legende_restaurant
+{
+    padding: 0.5em 0em 0em 1em;
+}
+
+.coeur
+{
+    display:flex;
+    align-items: center;
+    justify-items: center;
+    padding-right: 1em;
+}
+
+footer
+{
+    background-color: rgb(48, 47, 47);
+    padding: 0.5em 1em;
+    margin-top: 2em;
+}
+
+footer p, footer i
+{
+    color: white;
+}
+
+#logo_footer
+{
+    font-family: Shrikhand;
+    margin: 0.5em 0em;
+}
+
+.groupement_footer
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.groupement_footer i
+{
+    margin-right: 1em;
+}
+
+footer p
+{
+    margin: 0.2em 0em;
+}
+
+a
+{
+    text-decoration: none;
+}
