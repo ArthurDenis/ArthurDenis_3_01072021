@@ -103,6 +103,13 @@ main
     border-radius: 1.5em;
     background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
     color: white;
+    box-shadow: 0px 5px 7px 5px rgb(220, 220, 220);
+}
+
+.btn:hover
+{
+    background-image: linear-gradient(to bottom right, hsl(317,100%,84%), hsl(267,66%,70%));
+    box-shadow: 0px 5px 7px 5px rgb(200, 200, 200);
 }
 
 #processus
