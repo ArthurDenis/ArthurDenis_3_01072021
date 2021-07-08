@@ -159,7 +159,7 @@ main
 
 .fiche_restaurant
 {
-    max-width: 90%;
+    width: 90%;
     height: 16em;
     border-radius: 1em;
     margin-bottom: 1em;
@@ -228,4 +228,60 @@ footer p, footer i
 footer p
 {
     margin: 0.2em 0em;
+}
+
+@media (min-width: 768px)
+{
+    .etape
+    {
+        width:50%
+    }
+    
+    .fiche_restaurant
+    {
+        width:80%;
+        margin-bottom: 2em;
+    }
+}
+
+@media (min-width: 1200px)
+{
+    #logo
+    {
+        width:20%;
+    }
+
+    .btn
+    {
+        width:20%;
+        margin-right: 40%;
+        margin-left:40%;
+    }
+
+    #processus
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .etape
+    {
+        width: 20%;
+        padding-left: 2em;
+        margin-top: 6em;
+    }
+
+    #restaurant
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .fiche_restaurant
+    {
+        width:20%;
+    }
 }
