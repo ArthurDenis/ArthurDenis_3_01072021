@@ -7,6 +7,162 @@ body
 {
     font-family: 'Roboto', 'Sans-Serif', 'Shrikhand';
     width: 100%;
+    animation: apparition 3s  forwards;
+    -webkit-animation: apparition 3s  forwards;
+    -o-animation: apparition 3s  forwards;
+}
+
+@keyframes apparition
+{
+    0%
+    {
+        opacity: 0;
+    }
+
+    98%
+    {
+
+        opacity: 0.01;
+    }
+
+    100%
+    {
+        
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes apparition
+{
+    0%
+    {
+        opacity: 0;
+    }
+    
+    98%
+    {
+        opacity: 0.01;
+    }
+
+    100%
+    {
+        
+        opacity: 1;
+    }
+}
+
+@-o-keyframes apparition
+{
+    0%
+    {
+        opacity: 0;
+    }
+
+    98%
+    {
+        opacity: 0.01;
+    }
+
+    100%
+    {
+        
+        opacity: 1;
+    }
+}
+
+.spinner
+{
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-top: 1em solid #9356DC;
+    border-bottom: 1em solid #9356DC;
+    border-left: 1em solid #FF79DA ;
+    border-right: 1em solid #FF79DA ;
+    border-radius: 50%;
+    width: 8em;
+    height: 8em;
+    animation: loadspin 3s ease-in-out forwards;
+    -webkit-animation: loadspin 3s ease-in-out forwards;
+    -o-animation: loadspin 3s ease-in-out forwards;
+}
+
+@keyframes loadspin
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+
+    75%
+    {
+        transform: rotate(240deg);
+    }
+
+    98%
+    {
+        transform: rotate(350deg);
+        opacity: 1;
+    }
+
+    100%
+    {
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes loadspin
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+        
+    75%
+    {
+        transform: rotate(240deg);
+    }
+
+    98%
+    {
+        transform: rotate(300deg);
+        opacity: 1;
+    }
+
+    100%
+    {
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@-o-keyframes loadspin
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    
+    75%
+    {
+        transform: rotate(240deg);
+    }
+
+    98%
+    {
+        transform: rotate(300deg);
+        opacity: 1;
+    }
+
+    100%
+    {
+        transform: rotate(360deg);
+        opacity: 0;
+    }
 }
 
 h1, h3
@@ -201,6 +357,8 @@ main
     justify-items: center;
     padding-right: 1em;
 }
+
+
 
 footer
 {
