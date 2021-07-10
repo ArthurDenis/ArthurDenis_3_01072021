@@ -1,0 +1,728 @@
+/*Quelques règles générales*/
+body
+{
+    margin: 0em;
+}
+
+#contenant
+{
+    font-family: 'Roboto', 'Sans serif', 'Shrikhand';
+    width: 100%;
+}
+
+h1
+{
+    font-size: 1.7em;
+    font-weight: bold;
+    font-family: 'Shrikhand';/*Attention ici différent de l'accueil pour le nom du restaurant*/
+}
+
+h4
+{
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 0em;
+    text-overflow: ellipsis;/*Attention ici différent de l'accueil pour les fiches de commande*/
+    overflow: hidden;/*Attention ici différent de l'accueil pour les fiches de commande*/
+    white-space: nowrap;/*Attention ici différent de l'accueil pour les fiches de commande*/
+}
+
+p
+{
+    font-weight: 500;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.sous_titre
+{
+    font-weight: 300;
+    margin: 0.5em 0em 0em 0em;
+    text-overflow: ellipsis;/*Attention ici différent de l'accueil pour les fiches de commande*/
+    overflow: hidden;/*Attention ici différent de l'accueil pour les fiches de commande*/
+    white-space: nowrap;/*Attention ici différent de l'accueil pour les fiches de commande*/
+}
+/*Header, ici avec la flèche et le logo*/
+header
+{
+    display: flex;
+    padding-bottom: 0.5em;    
+}
+
+#logo
+{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    padding-top: 1em;
+}
+
+.arrow_retour
+{
+    width:15%;
+    padding-top: 1em;
+    padding-left: 1em;
+}
+/*Depuis la photo jusqu'au bouton de commande*/
+main
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.image_restaurant
+{
+    object-fit: cover;
+    height: 17em;
+    width: 100%;
+    margin-bottom: -4em;
+}
+
+#nom_restaurant
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+    border-radius: 2em 2em 0em 0em;
+    background-color: white;
+}
+/*Animation coeur semblable à celle de l'accueil*/
+.animation_heart
+{
+    position: relative;
+    cursor: pointer;
+    width: 2em;
+    height: 2.5em;
+    margin: 0em 1em;
+}
+
+.logo_heart
+{
+    font-size: 2em;
+    position:absolute;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+    transition: all 0.5s ease-in-out;
+}
+
+.hearthollow
+{
+    opacity: 1;
+}
+
+.heartfull
+{
+    background: linear-gradient(0deg, #9356DC, #FF79DA);
+    opacity: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -moz-text-stroke-color: transparent;
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    -o-text-stroke-color: transparent;
+    -ms-background-clip: text;
+    -ms-text-fill-color: transparent;
+    -ms-text-stroke-color: transparent;
+}
+
+.animation_heart:hover .heartfull
+{
+    opacity: 1;
+}
+
+.animation_heart:hover .hearthollow
+{
+    opacity: 0;
+}
+/*Animation pour l'apparition des ensembles entrées, plats et desserts de façon asynchrone*/
+.first_course
+{
+    animation: entree 2s  forwards;
+    -webkit-animation: entree 2s  forwards;
+    -o-animation: entree 2s  forwards;
+    -moz-animation: entree 2s  forwards;
+    -ms-animation: entree 2s  forwards;
+}
+
+@keyframes entree
+{
+    0%
+    {
+        opacity: 0;
+    }
+    50%
+    {
+
+        opacity: 0.7;
+    }
+    100%
+    {
+        
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes entree
+{
+    0%
+    {
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 0.7;
+    }
+    100%
+    {
+        
+        opacity: 1;
+    }
+}
+
+@-o-keyframes entree
+{
+    0%
+    {
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 0.7;
+    }
+    100%
+    {
+        
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes entree
+{
+    0%
+    {
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 0.7;
+    }
+    100%
+    {
+        
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes entree
+{
+    0%
+    {
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 0.7;
+    }
+    100%
+    {
+        
+        opacity: 1;
+    }
+}
+
+.second_course
+{
+    animation: plat 3.5s  forwards;
+    -webkit-animation: plat 3.5s  forwards;
+    -moz-animation: plat 3.5s  forwards;
+    -o-animation: plat 3.5s  forwards;
+    -ms-animation: plat 3.5s  forwards;
+}
+
+@keyframes plat
+{
+    0%
+    {
+        opacity: 0;
+    }
+    50%
+    {
+
+        opacity: 0.5;
+    }
+    100%
+    {
+        
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes plat
+{
+    0%
+    {
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 0.5;
+    }
+    100%
+    {
+        
+        opacity: 1;
+    }
+}
+
+@-o-keyframes plat
+{
+    0%
+    {
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 0.5;
+    }
+    100%
+    {
+        
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes plat
+{
+    0%
+    {
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 0.5;
+    }
+    100%
+    {
+        
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes plat
+{
+    0%
+    {
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 0.5;
+    }
+    100%
+    {
+        
+        opacity: 1;
+    }
+}
+
+.third_course
+{
+    animation: dessert 5s  forwards;
+    -webkit-animation: dessert 5s  forwards;
+    -ms-animation: dessert 5s  forwards;
+    -moz-animation: dessert 5s  forwards;
+    -o-animation: dessert 5s  forwards;
+}
+
+@keyframes dessert
+{
+    0%
+    {
+        opacity: 0;
+    }
+    50%
+    {
+
+        opacity: 0.4;
+    }
+    100%
+    {
+        
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes dessert
+{
+    0%
+    {
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 0.4;
+    }
+    100%
+    {
+        
+        opacity: 1;
+    }
+}
+
+@-o-keyframes dessert
+{
+    0%
+    {
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 0.4;
+    }
+    100%
+    {
+        
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes dessert
+{
+    0%
+    {
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 0.4;
+    }
+    100%
+    {
+        
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes dessert
+{
+    0%
+    {
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 0.4;
+    }
+    100%
+    {
+        
+        opacity: 1;
+    }
+}
+/*Début des menus*/
+.titre_menu
+{
+    font-weight: lighter;
+    border-bottom: 0.1em solid #99E2D0;
+    width: 1.5em;
+    margin-left: 1em;
+}
+
+.partie_menu
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*Construction des fiches commandes avec l'animation pour pour les valider et remplir un potentiel panier*/
+.fiche_commande
+{
+    width: 83%;
+    height:85px;
+    border-radius: 1em;
+    box-shadow: 0px 5px 7px 5px rgb(233, 233, 233);
+    margin-bottom: 1em;
+    display:flex;
+    flex-direction: row;
+    cursor: pointer;
+    overflow: hidden;
+    animation: checking 2s ease-in-out both;
+    -webkit-animation: checking 2s ease-in-out both;
+    -ms-animation: checking 2s ease-in-out both;
+    -moz-animation: checking 2s ease-in-out both;
+    -o-animation: checking 2s ease-in-out both;
+}
+
+
+.titre_plat
+{
+    overflow:hidden;
+    text-overflow: ellipsis;
+    padding-left: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.prix
+{
+    display:flex;
+    flex:1;
+    justify-content: flex-end;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 1em;
+}
+
+.check_anim
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    max-width: 0;
+    overflow: hidden;
+    background-color: #99E2D0;
+    transition: 0.3s ease-in-out;
+}
+
+.logo_cercle
+{
+    color: white;
+    font-size: 1.5em;
+    transition: 0.3s ease-in-out;
+}
+/*Déclencheur de l'animation*/
+.fiche_commande:hover .check_anim
+{
+    max-width: 4em;
+}
+
+.fiche_commande:hover .logo_cercle
+{
+transform: rotate(360deg);
+}
+
+@keyframes cheking
+{
+    0%
+    {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes cheking
+{
+    0%
+    {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@-o-keyframes cheking
+{
+    0%
+    {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes cheking
+{
+    0%
+    {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes cheking
+{
+    0%
+    {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/*Bouton de commande, pour l'instant lien vers l'accueil mais potentiellement lien vers un service de paiement*/
+.commande
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    margin-right: 20%;
+    margin-left:20%;
+}
+
+.btn
+{
+    margin-top: 1em;
+    height: 3em;
+    border-radius: 1.5em;
+    background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    color: white;
+    box-shadow: 0px 5px 7px 5px rgb(220, 220, 220);
+}
+/*Animation du bouton de commande*/
+.btn:hover
+{
+    background-image: linear-gradient(to bottom right, hsl(317,100%,84%), hsl(267,66%,70%));
+    box-shadow: 0px 5px 7px 5px rgb(200, 200, 200);
+}
+/*Footer commun au site entier*/
+footer
+{
+    background-color: rgb(48, 47, 47);
+    padding: 0.5em 1em;
+    margin-top: 1em;
+    transform: translateY(1.2em);
+}
+
+footer p, footer i
+{
+    color: white;
+}
+
+#logo_footer
+{
+    font-family: Shrikhand;
+    margin: 0.5em 0em;
+}
+
+.groupement_footer
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.groupement_footer i
+{
+    margin-right: 1em;
+}
+
+footer p
+{
+    margin: 0.2em 0em;
+}
+/* Début des media queries
+Tout d'abord les tablettes*/
+@media (min-width: 768px)
+{
+    .arrow_retour
+    {
+        padding-left: 2em;
+        padding-top: 3em;
+    }
+
+    h1
+    {
+        padding-right: 2em;
+    }
+
+    #nom_restaurant
+    {
+        justify-content: center;
+    }
+}
+/*Media queries pour le desktop*/
+@media (min-width: 1200px)
+{
+    header
+    {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #logo
+    {
+        width: 15%;
+        margin-right: 45%;
+        margin-left: 30%;
+    }
+
+    .arrow_retour
+    {
+        width: 10%;
+    }
+
+    .image_restaurant
+    {
+        height: 12em;
+    }
+/*Réorganisation 3 colonnes pour les différents ensembles de plat pour éviter de trop scroller en profitant de l'animation plus haut*/
+    #organisation_desktop
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .first_course, .second_course, .third_course
+    {
+        width:25%;
+    }
+
+    .fiche_commande
+    {
+        width:100%;
+    }
+
+    .btn
+    {
+        width:20%;
+        margin-right: 40%;
+        margin-left:40%;
+    }
+}
+/*Media queries pour limiter des effets non désiré avec de très grands écrans*/
+@media (min-width: 1920px)
+{
+    #contenant
+    {
+        width: 1920px;
+        max-width: 1920px;
+    }
+}
